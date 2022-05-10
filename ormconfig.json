@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "port": 5432,
+  "host": "database_car_registration",
+  "username": "docker",
+  "password": "mabel_2022",
+  "database": "registerCar",
+  "migrations": [
+    "./prisma/migrations/**/*.sql"
+  ],
+  "cli": {
+    "migrationsDir": "./prisma/Migrations"
+  }
+}

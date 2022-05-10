@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native"]
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+model Categories {
+
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  created_at  DateTime @default(now())
+  car         Cars[]
+
+  @@map("category")
+}
+
+model Cars {
+
+  id             String     @id @default(uuid())
+  name           String
+  description    String
+  category       String
+  category_id_fk Categories @relation(fields: [category], references: [id])
+
+  @@map("car")
+}
+
+model Users {
+
+  id             String @id @default(uuid())
+  name           String
+  email          String @unique
+  password       String @unique
+  driver_license String
+
+  @@map("user")
+}

@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  database:
+    image: postgres
+    container_name: database_car_registration
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=mabel_2022
+      - POSTGRES_DB=registerCar
+    volumes:
+      - pgdata:/data/postgres
+
+  app:
+    build: .
+    container_name: mabelforever
+    restart: always
+    ports:
+      - 3311:3311
+    volumes:
+      - .:/usr/app
+    env_file:
+      - .env
+
+    links:
+      - database
+    depends_on:
+      - database
+
+volumes:
+  pgdata:
+    driver: local
