@@ -1,5 +1,6 @@
 import { inject, injectable } from 'tsyringe';
 import { ICategoryRepository } from '../../../../Repository/ICategoryRepository';
+import { AppError } from '../../../../../../Errors/AppError';
 
 @injectable()
 export class FindOneCategoryUseCase {
@@ -14,7 +15,7 @@ export class FindOneCategoryUseCase {
 
     if (!findCategory) {
 
-      throw new Error('This category not exists');
+      throw new AppError('This category not exists');
     }
 
     return findCategory;

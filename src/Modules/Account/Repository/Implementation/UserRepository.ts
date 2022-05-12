@@ -1,10 +1,18 @@
 import { IUserRepository } from "../IUserRepository";
-import { client } from "../../../../../prisma/Client/Client.prisma";
+import { client as prismaClient } from "../../../../../prisma/Client/Client.prisma";
 import { User } from "../../model/User/User";
+import { PrismaClient, Users } from "@prisma/client";
+import { IRequestReturn } from "../IUserRepository";
 
 export class UserRepository implements IUserRepository {
 
-  constructor() { }
+  private client: PrismaClient
+
+  constructor() {
+
+    this.client = new PrismaClient();
+
+  }
 
   private static INSTANCE: UserRepository;
 
@@ -18,7 +26,7 @@ export class UserRepository implements IUserRepository {
     return UserRepository.INSTANCE;
   }
 
-  async create(name: string, email: string, password: string, driver_license: string) {
+  async create(name: string, email: string, password: string, driver_license: string): Promise<Users> {
 
     const newUserProps = {
 
@@ -30,29 +38,49 @@ export class UserRepository implements IUserRepository {
 
     const newUser = new User(newUserProps);
 
-    const createUserClient = await client.users.create({
+    const createUser = await this.client.users.create({
 
       data: {
 
         name,
         email,
         password,
-        driver_license
+        driver_license,
+        avatar: "Mabel"
       }
     });
 
-    return createUserClient;
+    return createUser;
   }
 
-  async findOne(email: string) {
+  async findOne(email: string): Promise<IRequestReturn | null> {
 
-    const findOneUser = await client.users.findFirst({ where: { email: email } });
+    const findOneUser = await this.client.users.findUnique({ where: { email: email } });
     return findOneUser;
   }
 
-  async findAllUsers() {
+  async findAllUsers(): Promise<Users[]> {
 
-    const findAllUsers = await client.users.findMany();
+    const findAllUsers = await this.client.users.findMany();
     return findAllUsers;
+  }
+
+  async findById(sub: string): Promise<Users | null> {
+
+    const findUserById = await this.client.users.findUnique({ where: { id: sub } });
+    return findUserById;
+  }
+
+  async turnAdmin(sub: string): Promise<Users> {
+
+    const findAndUpdateUser = await this.client.users.update({
+      where: { id: sub },
+      data: {
+
+        admin: true
+      }
+    });
+
+    return findAndUpdateUser;
   }
 }

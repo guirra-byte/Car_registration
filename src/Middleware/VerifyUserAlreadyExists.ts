@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { client } from '../../../prisma/Client/Client.prisma';
+import { client } from '../../prisma/Client/Client.prisma';
 
 export async function VerifyUserAlreadyExistsMiddleware(request: Request, response: Response, next: NextFunction) {
 

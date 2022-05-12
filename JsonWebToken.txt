@@ -1,0 +1,28 @@
+Proteção nas rotas
+-> Utilização de Middleware
+Middleware é uma função que será executada anteriormente do conteúdo das nossas rotas;
+Fazer a criação do Middleware com base na autenticação do nosso TokenAuth;
+Passo o AuthToken no Header da Requisição;
+Será que podemos salvar o Auth Token no LocalStorage da Aplicação que possui Front-End??
+Será essa uma boa prática para garantir a performance?
+Performance Assurance -> PA (Isso é só uma sugestão!! KKKKKK);
+
+Para verificar se o Auth Token é válido
+Podemos utilizar o JWT Verify();
+
+Entendendo a criação do Token JWT:
+
+-> Possui 3 partes para a sua crição:
+-[] Payload
+  Dados que serão passados;
+  Importante não salvar dados sensíveis;
+  São as declarações das Entidades;
+    Privates
+    Public 
+    Registered -> Não orbigatórias mas recomendadas
+-[] Header
+  Token Type e Algoritmo de assinatura;
+-[] Verify Signature
+
+
+const token = sign({}, "", {})

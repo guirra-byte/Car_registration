@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { client } from '../../../prisma/Client/Client.prisma'
+import { client } from '../../prisma/Client/Client.prisma';
+import { AppError } from '../Errors/AppError';
 
 async function verifyCategory(request: Request, response: Response, next: NextFunction) {
 
@@ -16,7 +17,7 @@ async function verifyCategory(request: Request, response: Response, next: NextFu
 
   if (findCategory) {
 
-    return response.status(400).json({ error: "This Category Already Exists" });
+    throw new AppError("This Category already Exists!")
   }
 
   next();

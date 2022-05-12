@@ -35,11 +35,13 @@ model Cars {
 
 model Users {
 
-  id             String @id @default(uuid())
+  id             String  @id @default(uuid())
   name           String
-  email          String @unique
-  password       String @unique
+  email          String  @unique
+  password       String  @unique
   driver_license String
+  avatar         String
+  admin          Boolean @default(false)
 
   @@map("user")
 }
