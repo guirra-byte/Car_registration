@@ -20,7 +20,7 @@ Projeto prático para praticar conceitos aprendidos no curso intensivo Ignite
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Cadastrar Usuários verificados por Middleware de autenticação
-- [x] Gerar Hash de Passoword
+- [x] Gerar Hash de Password
 - [x] Procurar todos os Usuários
 - [x] Cadastrar Categorias
 - [x] Procurar por Categorias
