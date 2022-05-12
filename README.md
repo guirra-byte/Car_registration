@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Procurar todas as Categorias
 - [x] Inserção no Banco de Dados
 - [x] Verificação se o Usuário está autenticado (JWT)
-- [ ] Implementação de JWT
+- [x] Implementação de JWT
 - [x] Relacionamento entre as Categorias e Carros - One to Many
 
 ## Feito Com: ⚒
@@ -36,4 +36,3 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-0a9396?style=for-the-badge&logo=prisma&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
