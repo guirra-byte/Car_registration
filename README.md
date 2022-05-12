@@ -26,7 +26,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Procurar por Categorias
 - [x] Procurar todas as Categorias
 - [x] Inserção no Banco de Dados
-- [ ] Verificação se o Usuário está autenticado (JWT)
+- [x] Verificação se o Usuário está autenticado (JWT)
+- [ ] Implementação de JWT
 - [x] Relacionamento entre as Categorias e Carros - One to Many
 
 ## Feito Com: ⚒
