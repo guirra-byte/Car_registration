@@ -1,5 +1,5 @@
 # Car Registration
-Projeto prático para praticar conceitos aprendidos no curso intensivo Ignite
+Projeto prático para praticar conceitos aprendidos no curso intensivo `Ignite`
 
 ![Captura de Tela (387)](https://user-images.githubusercontent.com/77081114/167625935-7ff9257e-6046-4302-bd72-694c458c7bdc.png)
 ![Captura de Tela (388)](https://user-images.githubusercontent.com/77081114/167625944-0ad718ca-f4a4-4417-8f96-2edc34d4f907.png)
@@ -10,8 +10,8 @@ Projeto prático para praticar conceitos aprendidos no curso intensivo Ignite
 
 ### Descrição ☝
 > Desafio Prático
-> que consiste em um sistema de Usuários, Carros e Categorias. Utilizando Docker para rodar o PostgreSQL Database em um Container e o Prisma como ORM.
-> praticando relacionamentos entre tabelas One to Many, praticando implemetação de Containers
+> que consiste em um sistema de **Usuários**, **Carros** e **Categorias**. Utilizando `Docker` para alocar o `PostgreSQL` Database em um Container e  `Prisma` como ORM.
+> praticando **relacionamentos** entre tabelas One to Many, praticando implemetação de **Containers**
 > As relações um-para-muitos referem-se a relações em que zero registros em um lado da relação podem ser conectados a zero ou mais registros no outro lado.
 
 
@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Procurar todas as Categorias
 - [x] Inserção no Banco de Dados
 - [x] Verificação se o Usuário está autenticado (JWT)
-- [x] Implementação de JWT
+- [x] Implementação de `JWT`
 - [x] Relacionamento entre as Categorias e Carros - One to Many
 
 ## Feito Com: ⚒
