@@ -41,6 +41,7 @@ Neste projeto, foi colocado em prática conteúdos aprendidos:
   -   > D - Princípio da Inversão de Dependência
  
 - Integração de **API** com **Banco de Dados Relacional** via ORM **`Prisma.io`**
+  > Prisma.io deferentemente dos ORM´s padrão tem uma facilidade maior na criação de **Relacionamentos** entre as tabelas. O objetivo do Prisma.io é tornar nós Dev´s mais **produtivos** ao criarmos `Queries` de consulta **`SQL`**.
 - **Autenticação Permissiva** nas rotas com **`JWT`**
 - Banco de Dados e aplicação alocados em  **Containers `Docker`**, para maior produtividade e fluidez do projeto sem ter que baixar diversas Bibliotecas e Serviços, basta alocar a **Imagem** dos Serviços ou Bibliotecas em um Container e rodá-los.
 
