@@ -30,6 +30,22 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Implementação de `JWT`
 - [x] Relacionamento entre as Categorias e Carros - One to Many
 
+# 💻 Sobre o projeto
+
+Neste projeto, foi colocado em prática conteúdos aprendidos:
+
+- Princípios **`S.O.L.I.D`** usados:
+
+  -   > S - Princípio da Responsabilidade Única
+  -   > L - Princípio da Substituição de Liskov
+  -   > D - Princípio da Inversão de Dependência
+ 
+- Integração de **API** com **Banco de Dados Relacional** via ORM **`Prisma.io`**
+- **Autenticação Permissiva** nas rotas com **`JWT`**
+- Banco de Dados e aplicação alocados em  **Containers `Docker`**, para maior produtividade e fluidez do projeto sem ter que baixar diversas Bibliotecas e Serviços, basta alocar a **Imagem** dos Serviços ou Bibliotecas em um Container e rodá-los.
+
+Isso irá me ajudar a entender e exercitar os diferentes tipos de aplicações e estruturas que podemos fazer.
+
 ## Feito Com: ⚒
 ![Node.Js](https://img.shields.io/badge/Node.js-52b788?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-00b4d8?style=for-the-badge&logo=typescript&logoColor=white)
