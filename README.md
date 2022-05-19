@@ -48,7 +48,7 @@ Neste projeto, foi colocado em prática conteúdos aprendidos:
 - **Autenticação Permissiva** nas rotas com **`JWT`**
 - Banco de Dados e aplicação alocados em  **Containers `Docker`** para maior produtividade e fluidez do projeto. O Docker permite o empacotamento de uma aplicação ou ambiente dentro de um **Container**, se tornando prático e portátil para quaisquer `HOSTS` que contenham o **Docker** instalado.
 
-Isso irá me ajudar a entender e exercitar os diferentes tipos de aplicações e estruturas que podemos fazer.
+Isso irá me ajudar a entender e exercitar os diferentes tipos de aplicações e estruturas que podemos **desenvolver**.
 
 ## Feito Com: ⚒
 ![Node.Js](https://img.shields.io/badge/Node.js-52b788?style=for-the-badge&logo=node.js&logoColor=white)
