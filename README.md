@@ -1,6 +1,9 @@
 # Car Registration
 Projeto prático para praticar conceitos aprendidos no curso intensivo `Ignite`
 
+![image](https://user-images.githubusercontent.com/77081114/168168815-c9362e67-f907-4f29-af7e-4b3887806bfc.png)
+<hr>
+
 ![Captura de Tela (387)](https://user-images.githubusercontent.com/77081114/167625935-7ff9257e-6046-4302-bd72-694c458c7bdc.png)
 ![Captura de Tela (388)](https://user-images.githubusercontent.com/77081114/167625944-0ad718ca-f4a4-4417-8f96-2edc34d4f907.png)
 ![Captura de Tela (389)](https://user-images.githubusercontent.com/77081114/167625946-b1c508a6-02d0-4c54-b50b-ff473752dd18.png)
