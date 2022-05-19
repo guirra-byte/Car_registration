@@ -13,8 +13,8 @@ Projeto prático para praticar conceitos aprendidos no curso intensivo `Ignite`
 
 ### Descrição ☝
 > Desafio Prático
-> que consiste em um sistema de **Usuários**, **Carros** e **Categorias**. Utilizando `Docker` para alocar o `PostgreSQL` Database em um Container e  `Prisma` como ORM.
-> praticando **relacionamentos** entre tabelas One to Many, praticando implemetação de **Containers**.
+> que consiste em um sistema de **Usuários**, **Carros** e **Categorias**. Utilizando `Docker` para alocar o `PostgreSQL` Database em um **Container** e  `Prisma` como ORM.
+> praticando **relacionamentos** entre tabelas One to Many e implemetação de **Containers** `Docker`.
 > As relações um-para-muitos referem-se a relações em que zero registros em um lado da relação podem ser conectados a zero ou mais registros no outro lado.
 
 
