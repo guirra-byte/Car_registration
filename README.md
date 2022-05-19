@@ -43,7 +43,7 @@ Neste projeto, foi colocado em prática conteúdos aprendidos:
 - Integração de **API** com **Banco de Dados Relacional** via ORM **`Prisma.io`**
   > Prisma.io deferentemente dos ORM´s padrão tem uma facilidade maior na criação de **Relacionamentos** entre as tabelas. O objetivo do Prisma.io é tornar nós Dev´s mais **produtivos** ao criarmos `Queries` de consulta **`SQL`**.
 - **Autenticação Permissiva** nas rotas com **`JWT`**
-- Banco de Dados e aplicação alocados em  **Containers `Docker`**, para maior produtividade e fluidez do projeto sem ter que baixar diversas Bibliotecas e Serviços, basta alocar a **Imagem** dos Serviços ou Bibliotecas em um Container e rodá-los.
+- Banco de Dados e aplicação alocados em  **Containers `Docker`**, para maior produtividade e fluidez do projeto, o Docker permite o empacotamento de uma aplicação ou ambiente dentro de um **Container**, se tornando prático e portátil para quaisquer `HOSTS` que contenham o **Docker** instalado.
 
 Isso irá me ajudar a entender e exercitar os diferentes tipos de aplicações e estruturas que podemos fazer.
 
